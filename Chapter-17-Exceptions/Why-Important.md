@@ -1,13 +1,16 @@
-**Why Important** 
-- Used alot in API(Servers) to make sure the server does shutdown due to errors
-- Usually used to migitate things that could shutdown your server
-- used as a advanced version of the if else statement
+## Why It's Important
 
-**What it means**
-- attempt the following code, but if there are any errors then do the following
-- You could thor a error using the *throw new Error("blah blah")* syntax
-- in the "catch(e)" the e represents the information you put in the *throw new Error("blah blah")* part
+- Used extensively in APIs (servers) to ensure the server doesn't shut down due to errors.
+- Typically employed to mitigate situations that could potentially shut down your server.
+- Serves as an advanced version of the if-else statement.
 
-**Examples of errors** 
--  Not being able to connect to database at a certain time
-- failed to properly do a following action, like look up a user
+## What It Means
+
+- Attempt the following code, but if any errors occur, then execute the specified actions.
+- You can throw an error using the `throw new Error("blah blah")` syntax.
+- In the `catch(e)` block, the `e` represents the information you provided in the `throw new Error("blah blah")` part.
+
+## Examples of Errors
+
+- Unable to connect to the database at a certain time.
+- Failed to properly execute a subsequent action, such as looking up a user.

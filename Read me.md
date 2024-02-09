@@ -1,6 +1,7 @@
-****This code has some of the following****
+## This code includes the following:
 
-    1 -  links to the extra resources about the topic
-    2 - links to extra exercises
-    3 - important things out in each chapter, the less important and things you might want to dive into!
-    4 - Real World Examples of the code
+1. Links to extra resources about the topic.
+2. Links to extra exercises.
+3. Important points outlined in each chapter, including less important details and topics you might want to delve into further.
+4. Real-world examples of the code.
+
