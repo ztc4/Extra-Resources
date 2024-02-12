@@ -43,7 +43,7 @@ Mainly focuses on testing the following:
     - For example, a function that checks if an email is valid on input.
 - Checking if a database is functioning properly.
 - Verifying if a function that fetches multiple things in the database returns an array.
-- Also includes using tools like Postman to test API endpoints.
+- Also includes using tools like Postman to test API endpoints. // postman
 
 ## Test Driven Development
 
