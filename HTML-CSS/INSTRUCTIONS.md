@@ -2,19 +2,39 @@
 
 [GO TO FIGMA DESIGN FILE](https://www.figma.com/file/AkcjecDdlGFnA28GoPkuov/html-css-test?type=design&node-id=0%3A1&mode=design&t=FLcNW1dnXy8vKfhu-1)
 
-## Instructions
+## MORE INSTRUCTIONS
+1. LEADER OF THE GROUP SHOULD CREATE A GITHUB REPOSITORY
+ - add readme.md file( its fine to have nothing in it)
+2. Invite all your collaborators
+ - go to the github repository
+ - click settings and collaborators
+ - start addings your fellow group members
+3. collaborators want to go to their email and accept the invite to collaborate
+  - the collaboratory repository should now be in your list of repositorys(?? might be correct)
+  - if not there just have leader send link 
+4. Eberyone should open the collaborator repository in VSCODE
 
-1. Create the files you will need
+5. Leader of the groups should open VSCODE and share their screen doing then do the followings(only leader should be doing) in vscode
+ 
  - create a html file with a name of your choosing
  - add boiler plate(starter code) to html
  - create a css file with a name of your choosing
+ - Link the css file to your html file
+ - open live server to verify everything is correct!
+6. The Leader then should push the following code to github, after that the others want to git pull down the changes!
+ - git push
+ - git pull
 
-2. Link the css file to your html file
- - do this in the head section of html
+7. Everyone wants to create their own branch(including the leader) - name the branch your first name
+ - git branch - used to see all the branches( should only be one currently)
+ - git branch <name> - to create new branch
+ - git checkout <name> - to switch to the following branch
 
-3. Open the design file
+8. Now start working on turning something similar to the [design file](https://www.figma.com/file/AkcjecDdlGFnA28GoPkuov/html-css-test?type=design&node-id=0%3A1&mode=design&t=FLcNW1dnXy8vKfhu-1) into html and css!
+ - communicate to solve each other problems
 
-4. Start by adding all the html elements in this order
+
+9. Start by adding all the html elements in this order
  - img element - for an image of you
  - header element - for your name
  - header element - for profession(OR ANYTHING ELSE)
@@ -22,12 +42,13 @@
  - p element - description of you
  - button element - FOR the buttons
 
-5. Style your page
+10. Style your page
  - Go to the css file you created and linked earlier
  - now start by grabbing elements( you can also add classes , or ids to your elements)
    - see the html and css file for examples
    - grab a class using "#" and class "." before name
    - classes and ids cant have spaces "hello-class" instead of "hello class"
+11. After done styling, find a way to push your
 
 ## CSS PROPERTIES YOU WILL USE
 - font size - change the font size
