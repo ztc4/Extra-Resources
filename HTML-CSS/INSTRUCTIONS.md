@@ -39,4 +39,4 @@
 - width - width of the element
 
 # advanced
-- display -  
+- display -  mainly want to learn flex
