@@ -6,11 +6,11 @@
 
 1. Create the files you will need
  - create a html file with a name of your choosing
- - add boiler plate to html
+ - add boiler plate(starter code) to html
  - create a css file with a name of your choosing
 
 2. Link the css file to your html file
- - have to use link rel
+ - do this in the head section of html
 
 3. Open the design file
 
@@ -39,4 +39,4 @@
 - width - width of the element
 
 # advanced
-- display -  learn flexbox and grid
+- display -  
