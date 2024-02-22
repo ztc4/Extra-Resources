@@ -49,6 +49,7 @@
    - grab a class using "#" and class "." before name
    - classes and ids cant have spaces "hello-class" instead of "hello class"
 11. After done styling, find a way to push your
+12. Just trying something
 
 ## CSS PROPERTIES YOU WILL USE
 - font size - change the font size
