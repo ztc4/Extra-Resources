@@ -35,7 +35,7 @@
  - git checkout "name" - to switch to the following branch
 
 8. Now start working on turning something similar to the [design file](https://www.figma.com/file/AkcjecDdlGFnA28GoPkuov/html-css-test?type=design&node-id=0%3A1&mode=design&t=FLcNW1dnXy8vKfhu-1) into html and css!
- - communicate to solve each other problems
+ - you can communicate with each other while trying to get to your solution
 <img src="design-file.png" alt="design file" style="height:200px;">
 
 
