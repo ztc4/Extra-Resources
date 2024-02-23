@@ -31,8 +31,8 @@
 
 7. Everyone wants to create their own branch(including the leader) - name the branch your first name
  - git branch - used to see all the branches( should only be one currently)
- - git branch <name> - to create new branch
- - git checkout <name> - to switch to the following branch
+ - git branch "name" - to create new branch
+ - git checkout "name" - to switch to the following branch
 
 8. Now start working on turning something similar to the [design file](https://www.figma.com/file/AkcjecDdlGFnA28GoPkuov/html-css-test?type=design&node-id=0%3A1&mode=design&t=FLcNW1dnXy8vKfhu-1) into html and css!
  - communicate to solve each other problems
@@ -56,14 +56,14 @@
    - classes and ids cant have spaces "hello-class" instead of "hello class"
 
 11. After done styling, find a way to push your branch up to the repository
- -  git push --set-upstream origin <name> ( might work only on the first time, having to push a branch up!)
+ -  git push --set-upstream origin "name" ( might work only on the first time, having to push a branch up!)
  - the leader might have to allow the push request
 
 12. pull down everyone branches, then navigate to someone elses branch
  -  git pull
  -  git branch -a (doing it without -a, you will not see the other poeple branches pull down)
   - some branch names should appear like this "remotes/origin/red" ( red being the name I named the branch)
- - git checkout <name> - in the example about I would enter "git checkout red"
+ - git checkout "name" - in the example about I would enter "git checkout red"
 
 13. View other group members branches, and discuss with each other!
 
