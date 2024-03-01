@@ -1,0 +1,31 @@
+service: launchcode-message
+provider:
+  name: aws
+  runtime: nodejs18.x
+  environment: 
+    REGION: 'us-east-1'
+  stage: dev
+  region: us-east-1
+  memorySize: 256
+
+
+functions:
+  app:
+    handler: app.handler
+    events: 
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true
+plugins:
+  - serverless-offline
+custom:
+  apigwBinary:
+    types:
+      - '*/*'
+  serverless-offline:
+    httpPort: 4000

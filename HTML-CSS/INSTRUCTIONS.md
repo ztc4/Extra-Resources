@@ -16,7 +16,7 @@
   - the collaboratory repository should now be in your list of repositorys(?? might be correct)
   - if not there just have leader send link 
 
-4. Eberyone should open the collaborator repository in VSCODE
+4. Everyone should open the collaborator repository in VSCODE
 
 5. Leader of the groups should open VSCODE and share their screen doing then do the followings(only leader should be doing) in vscode
  - create a html file with a name of your choosing
