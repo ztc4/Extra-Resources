@@ -20,7 +20,7 @@
   - Name
   - Email
   - Message
-<img src="images/input-example.png" alt="input example" style="height:200px;">
+<img src="images/input-example.png" alt="input example" style="height:30px;">
 - Add an input for submitting the form.
 
 ## Step 3: Add Event Listener for Form Submit
