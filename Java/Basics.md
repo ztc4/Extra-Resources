@@ -5,7 +5,7 @@ In Java, most code is encapsulated within classes. Let's explore some key OOP co
 ## What Makes Up OOP in Java
 
 - **Class**: There are two types we'll cover:
-  - Regular classes
+  - Factories/ Regular classes
   - Interfaces
 - **Concepts** (examples coming up):
   - Class & Object
