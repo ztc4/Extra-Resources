@@ -277,7 +277,7 @@ System.out.println(Person.peopleCreated)
 
 See how when accessing the singleton values I do `Person.peopleCreated` while when access instance values I do the name I assigned to the variable like `jermaco.name`.
 
-## Interfaces
+## Our concepts so far
 
 Looking at the four concepts we pointed out earlier so far we have done two of them
 - **Concepts** (examples coming up):
@@ -293,10 +293,10 @@ Looking at the four concepts we pointed out earlier so far we have done two of t
 
 ps - It usually called parameters when making the function, but arguments when you actually call a function/method.
 
-### Now what about Abstraction and Inheritance?
+## Now what about Abstraction and Inheritance?
 
 
-Inheritance
+#### Inheritance
 When you want a class to inherit all the functions/methods from a different class
 
 
@@ -349,6 +349,7 @@ System.out.println(zachary.name)// Variable that belonged to Person
 
 
 ## Ignore for Now!
+## Interfaces
 Well before I teach that lets go into something called an Interface
 
 In a scenario I want a way to list out the most basic things a smartphone should be able to do, in this situation I would use something called an Interface
