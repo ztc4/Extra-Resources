@@ -21,7 +21,7 @@ Java requires specifying the data type before the variable name.
 int age = 19; // Example of declaring an integer variable
 String name = "Zachary"; // Example of declaring a string variable
 ```
-If you happen to be declaring something that a class the you would put the object before
+If you happen to be declaring a class/instance of an class, you would then use that class name before it!
 
 ```java
 Classname zachary = new Classname();
