@@ -8,7 +8,7 @@ In Java, most code is encapsulated within classes. Let's explore some key OOP co
   - Factories/ Regular classes
   - Interfaces
 - **Concepts** (examples coming up):
-  - Class & Object
+  - Abstraction
   - Inheritance
   - Polymorphism
   - Encapsulation
@@ -31,9 +31,10 @@ Classname zachary = new Classname();
 
 - **HashMap:** A key-value pair collection where each key is unique, providing fast lookup and retrieval operations based on the key's hash code.
 ```java
-HashMap<String, int> hashMap = new HashMap<>(); //String represents username, while int represents level
+HashMap<String, Integer> hashMap = new HashMap<>(); //String represents username, while int represents level
 hashMap.put("Celia", 30);
 ```
+Another thing of advice the following values`<String, Integer>  ` would never be `<String, int>` it doesn't allow primitive data types which are usually lowercase!
 - **Array:** A fixed-size data structure that stores elements of the same type sequentially in memory, accessed using an index.
 ```java
 int[] numbers = {10, 20, 30, 40, 50};
@@ -101,6 +102,7 @@ class Person{
     String firstname;
     String lastname;
     int age;
+    private int ssn;
 
 
     // Constructor 1
@@ -132,6 +134,10 @@ class Person{
         lname = last
         name = fname + last // might not need this code
     }
+    void addSSN(int number){
+        ssn = number;
+    }
+    
 }
 ```
 Below I create two instances, one that uses the more basic constructor and one that uses the one with more properties:
@@ -217,6 +223,7 @@ class Person{
     String firstname;
     String lastname;
     int age;
+    private int ssn;
 
     // Constructor 1
     // Set the initial properties with these, code that runs when you create an instance
@@ -247,6 +254,9 @@ class Person{
         lname = last
         name = fname + last // might not need this code
     }
+    private void addSSN(int number){
+        ssn = number;
+    }
 }
 ```
 
@@ -254,7 +264,7 @@ class Person{
 let show an coding example of making an instance and using the variables
 ```java
 // Making instances
-Person jermarco = new Person(,"Jermarco","Burton",36); 
+Person jermarco = new Person("Jermarco","Burton",36); 
 Person john = new Person("123launchcode@gmail.com","John","Henry",25);
 
 // Doing some of the singleton variables
@@ -266,3 +276,91 @@ System.out.println(Person.peopleCreated)
 ```
 
 See how when accessing the singleton values I do `Person.peopleCreated` while when access instance values I do the name I assigned to the variable like `jermaco.name`.
+
+## Interfaces
+
+Looking at the four concepts we pointed out earlier so far we have done two of them
+- **Concepts** (examples coming up):
+  - Abstraction
+  - Inheritance
+  - Polymorphism
+  - Encapsulation 
+
+Looking at the four concepts we pointed out earlier so far we have done two of them
+- **Encapsulation** we've alrady done above, it just the bundling of data, and methods(functions to make a class)
+- **Polymorphism**  - Done by having 2 constructors just to `void Person(String firstname, String lastname, int a)` && `void Person(String mail, String firstname, String lastname, int a)`, see how one of them needs 4 parameters/arguments instead of 3?
+    - I also can opt to call them different, but they both work `Person john = new Person("123launchcode@gmail.com","John","Henry",25)` || `Person jermarco = new Person("Jermarco","Burton",36);`
+
+ps - It usually called parameters when making the function, but arguments when you actually call a function/method.
+
+### Now what about Abstraction and Inheritance?
+
+
+Inheritance
+When you want a class to inherit all the functions/methods from a different class
+
+
+Scenario: In the the coding examples before I created an Person class with many methods and properties, lets say I want to create two similar classes one for `Employee` and  `Student`, and in these classes I want have a few more variable, and some methods/functions. In a situation without inheritance I would go about creating two new classes and I would go to the `Person` class and start copying code to past into those new classes.
+
+This isn't recommended, your using alot of the same code, which is a big NO in programming, you could do something like Inheritance to allow for your new class go get all those methods from the `Person` class.
+
+Example of Inheritance:
+
+```java
+class Employee extends Person {
+    // The new variables this class would have
+    String position; 
+    double salary;
+
+    Employee(String firstname, String lastname, int age, String position, double salary) {
+        super(firstname, lastname, age);// Represents the constructor of the class you inherit from, which is Person
+        position = position;
+        salary = salary;
+    }
+
+    
+    // New method 
+    void promote(String newPosition, double newSalary) {
+        position = newPosition;
+        salary = newSalary;
+        System.out.println("Employee promoted to " + newPosition + " with salary $" + newSalary);
+    }
+
+    // The getProperties method that it inherits from the Person class is being updated here by using Override
+    @Override
+    String[] getProperties() {
+        String[] info = { name, email, Integer.toString(age), position, Double.toString(salary) };
+        return info;
+    }
+}
+```
+If I were to make an instance of this class, I could access all the variables and methods that happen to be apart of  `Person` class
+
+```Java
+Employee zachary = new Employee("Zachary","Coats", 19, "Web developer IA","$0")
+zachary.changeName("Zack","Coats") // method that belonged to Person
+System.out.println(zachary.name)// Variable that belonged to Person
+```
+
+
+
+
+
+
+
+## Ignore for Now!
+Well before I teach that lets go into something called an Interface
+
+In a scenario I want a way to list out the most basic things a smartphone should be able to do, in this situation I would use something called an Interface
+Interfaces are mainly used to tell a class what methods it should have for example
+
+```Java
+interface Phone{
+    void connectInternet();
+    void makeCall(String phoneNumber);
+    void browseInternet();
+}
+
+
+``` 
+
