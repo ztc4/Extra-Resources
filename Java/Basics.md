@@ -26,6 +26,24 @@ If you happen to be declaring something that a class the you would put the objec
 ```java
 Classname zachary = new Classname();
 ```
+## Advanced data types
+### Java Data Structures Overview
+
+- **HashMap:** A key-value pair collection where each key is unique, providing fast lookup and retrieval operations based on the key's hash code.
+```java
+HashMap<String, int> hashMap = new HashMap<>(); //String represents username, while int represents level
+hashMap.put("Celia", 30);
+```
+- **Array:** A fixed-size data structure that stores elements of the same type sequentially in memory, accessed using an index.
+```java
+int[] numbers = {10, 20, 30, 40, 50};
+numbers[0] = 44;
+```
+- **ArrayList:** A dynamic array-like structure that can grow or shrink as elements are added or removed, providing flexibility in managing collections of objects.
+```java 
+ArrayList<String> colors = new ArrayList<>();
+colors.add("red")
+```
 
 ## Conditionals still look pretty much the same
 
