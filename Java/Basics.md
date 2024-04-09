@@ -107,7 +107,7 @@ class Person{
 
     // Constructor 1
     // Set the initial properties with these, code that runs when you create an instance
-    void Person(String firstname, String lastname, int a){ 
+    Person(String firstname, String lastname, int a){ 
         name = firstname + lastname;
         email = mail;
         age = a;
@@ -115,10 +115,11 @@ class Person{
 
     }
     // Constructor 2
-    void Person(String mail, String firstname, String lastname, int a){ 
+    Person(String mail, String fname, String lname, int a){ 
         name = firstname + lastname;
-        fname = firstname;
-        lname = lastname;
+ 
+        firstname = fname;
+        lastname = lname;
         email = mail;
         age = a;
         System.out.print("I have created an instance that used some extra values")
@@ -227,7 +228,7 @@ class Person{
 
     // Constructor 1
     // Set the initial properties with these, code that runs when you create an instance
-    void Person(String firstname, String lastname, int a){ 
+    Person(String firstname, String lastname, int a){ 
         name = firstname + lastname;
         email = mail;
         age = a;
@@ -235,10 +236,11 @@ class Person{
 
     }
     // Constructor 2
-    void Person(String mail, String firstname, String lastname, int a){ 
+    Person(String mail, String fname, String lname, int a){ 
         name = firstname + lastname;
-        fname = firstname;
-        lname = lastname;
+ 
+        firstname = fname;
+        lastname = lname;
         email = mail;
         age = a;
         System.out.print("I have created an instance that used some extra values")
